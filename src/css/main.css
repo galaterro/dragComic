@@ -12,6 +12,9 @@ html {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
+    margin: 0px;
+    padding: 0px;
+    background-color: #5DA698;
 }
 
 /*
@@ -87,9 +90,37 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+.wrapper{
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+}
+
+.header{
+    width: 100%;
+    height: 10%;
+    font-family: Arial;
+    text-align: center;
+    background-color: #45736A;
+    -moz-box-shadow: 0px 0px 20px #D9D162;
+    -webkit-box-shadow: 0px 0px 20px #D9D162;
+    box-shadow: 0px 0px 20px #D9D162;
+
+}
+
+#titleHeader{
+    margin: 0px;
+    padding: 0px;
+}
+
 section{
     float: left;
     margin: 1em;
+}
+
+.boxes{
+    display: table;
+    margin: 0 auto;
 }
 
 #cajasoltar{
@@ -97,6 +128,9 @@ section{
     border: groove;
     width: 235px;
     height: 345px;
+    -moz-box-shadow: 0px 0px 10px #F2F2F0;
+    -webkit-box-shadow: 0px 0px 10px #F2F2F0;
+    box-shadow: 0px 0px 10px #F2F2F0;
 }
 
 #cajasoltar > *{
@@ -111,9 +145,13 @@ section{
     border: groove;
     width: 235px;
     height: 345px;
+    -moz-box-shadow: 0px 0px 10px #F2F2F0;
+    -webkit-box-shadow: 0px 0px 10px #F2F2F0;
+    box-shadow: 0px 0px 10px #F2F2F0;
 }
 
-#cajaimagenes > img{
+#cajaimagenes > img
+ {
     float: left;
     margin-left: 10px;
     margin-top: 10px;
@@ -123,7 +161,7 @@ section{
 
 .leftBoxes > *{
     flex-direction: column;
-    border: 1px solid #999999;
+    border: 1px solid #A66363;
     width: 100px;
     height: 100px;
     margin-left: 10px;
@@ -132,11 +170,24 @@ section{
 
 .rightBoxes > *{
     flex-direction: column;
-    border: 1px solid #b3d4fc;
+    border: 1px solid #A66363;
     width: 100px;
     height: 100px;
     margin-left: 10px;
     margin-top: 10px;
+}
+
+div > img{
+    float: left;
+    width: 100px;
+    height: 100px;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
 }
 
 /* ==========================================================================
